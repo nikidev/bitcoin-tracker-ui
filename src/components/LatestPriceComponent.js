@@ -10,14 +10,14 @@ class LatestPriceComponent extends Component {
     componentDidMount() {
         axios.get(`http://localhost:8088/api/bitcoin-last-price`)
             .then(response => {
-                this.setState({response_messagea: response.data[0]})
+                this.setState({response_message: response.data[0]})
             })
     }
 
     render() {
         return (
             <div>
-                <h3> Bitcoin: ${this.state.response_messagea}</h3>
+                <h3> Bitcoin: ${this.state.response_message}</h3>
             </div>
         )
     }

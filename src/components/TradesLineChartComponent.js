@@ -64,7 +64,7 @@ class TradesLineChartComponent extends Component {
     render() {
         return (
             <div>
-                <canvas ref={this.chartRef} width="1900" height="450">
+                <canvas ref={this.chartRef} width="1900" height="500">
 
                 </canvas>
             </div>
